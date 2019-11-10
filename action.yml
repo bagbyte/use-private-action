@@ -1,4 +1,4 @@
-name: 'Use private GitHub action'
+name: 'bagbyte/use-private-action'
 description: 'This action allow to use custom actions in private GitHub repository.'
 author: 'bagbyte'
 branding: 
