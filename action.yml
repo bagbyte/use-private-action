@@ -1,0 +1,15 @@
+name: 'Use private GitHub action'
+description: 'This action allow the use of GitHub private actions'
+author: 'bagbyte'
+branding: 
+  icon: 'activity'  
+inputs:
+  action:
+    description: 'Private action to execute, format: {org}/{repo}[/path]@ref'
+    required: true
+  token:
+    description: 'Token to access the private repository'
+    required: true
+runs:
+  using: 'node12'
+  main: 'dist/main.js'
