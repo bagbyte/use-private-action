@@ -1,4 +1,4 @@
-# `bagbyte/use-private-action` GitHub action
+# `@bagbyte/use-private-action` GitHub action
 
 This action allow to use custom actions in private GitHub repository.
 
@@ -10,7 +10,7 @@ jobs:
     my_job:
         ...
         steps:
-            - uses: bagbyte/use-private-action@master
+            - uses: @bagbyte/use-private-action@master
               with:
                   action: 
                   token: ${{ secrets.PRIVATE_REPO_ACCESS_TOKEN }}
