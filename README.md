@@ -12,12 +12,12 @@ jobs:
         steps:
             - uses: bagbyte/use-private-action@v0.0.2
               with:
-                  action: 
-                  token: ${{ secrets.PRIVATE_REPO_ACCESS_TOKEN }}
+                  private-action: 
+                  private-action-token: ${{ secrets.PRIVATE_REPO_ACCESS_TOKEN }}
             - ... other steps
 ```
 
-**Note:** both `action` and `token` are required fields. `action` has the same format as the value you can use in the `uses`: `{org}/{repo}[/path]@ref`
+**Note:** both `private-action` and `private-action-token` are required fields. `private-action` has the same format as the value you can use in the `uses`: `{org}/{repo}[/path]@ref`
 
 ## Prerequisites
 
