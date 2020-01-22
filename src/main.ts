@@ -117,29 +117,29 @@ async function deleteFolder(tempFolder: string) {
             core.setFailed(`There was an error while trying to delete temp folder '${tempFolder}'`);
         }
     }
-} 
+}
 
 // This method checks out the code from the repository and branch where the action has been called
 async function checkoutCode() {
-    // Read `action` input parmeter
-    const action = core.getInput('action');
+    // Read `private-action` input parmeter
+    const action = core.getInput('private-action');
 
-    // Read `token` input parmeter
-    const token = core.getInput('token');
+    // Read `private-action-token` input parmeter
+    const token = core.getInput('private-action-token');
 
-    // If `action` input prameter is missing, return an error
+    // If `private-action` input prameter is missing, return an error
     if (!action) {
-        core.setFailed(`Missing 'action' input parameter`);
+        core.setFailed(`Missing 'private-action' input parameter`);
         return;
     }
 
-    // If `token` input prameter is missing, return an error
+    // If `private-action-token` input prameter is missing, return an error
     if (!token) {
-        core.setFailed(`Missing 'token' input parameter`);
+        core.setFailed(`Missing 'private-action-token' input parameter`);
         return;
     }
 
-    // Extract `ref` from `action`
+    // Extract `ref` from `private-action`
     const [ repoParts, ref ] = action.split('@');
 
     // If `ref` is missing, return an error
@@ -148,7 +148,7 @@ async function checkoutCode() {
         return;
     }
 
-    // Extract all components from `action` input parameter
+    // Extract all components from `private-action` input parameter
     const [ org, repo, path ] = repoParts.split('/');
 
     // If `org` or `repo` is missing, return an error

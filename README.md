@@ -10,7 +10,7 @@ jobs:
     my_job:
         ...
         steps:
-            - uses: bagbyte/use-private-action@v0.0.1
+            - uses: bagbyte/use-private-action@v0.0.2
               with:
                   action: 
                   token: ${{ secrets.PRIVATE_REPO_ACCESS_TOKEN }}
