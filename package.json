@@ -1,12 +1,13 @@
 {
   "name": "@bagbyte/use-private-action",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "private": true,
   "description": "This action allow the use of GitHub private actions",
   "main": "dist/main.js",
   "scripts": {
     "build": "tsc",
-    "test": "jest"
+    "test": "jest",
+    "prepublishOnly": "npm run build && npm prune --prod && npm version patch"
   },
   "repository": {
     "type": "git",
@@ -19,6 +20,11 @@
   ],
   "author": "bagbyte",
   "license": "MIT",
+  "files": [
+    "dist/**/*",
+    "node_modules/**/*",
+    "action.yml"
+  ],
   "dependencies": {
     "@actions/core": "^1.2.0",
     "@actions/exec": "^1.0.1",

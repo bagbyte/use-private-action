@@ -5,10 +5,10 @@ branding:
   icon: 'external-link'
   color: 'gray-dark'
 inputs:
-  action:
+  private-action:
     description: 'Private action to execute, format: {org}/{repo}[/path]@ref'
     required: true
-  token:
+  private-action-token:
     description: 'Token to access the private repository'
     required: true
 runs:
