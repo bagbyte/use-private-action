@@ -75,7 +75,7 @@ async function executeAction(actionFileFolder: string) {
 
     // Check if the `action.yml` file has properly written
     if (!('runs' in actionFileObject) || !('using' in actionFileObject.runs)) {
-        throw new Error(`There was an error while paesing 'action.yml' file, missing 'runs.using'`);
+        throw new Error(`There was an error while parsing 'action.yml' file, missing 'runs.using'`);
     }
 
     // Check if the action is based on node
