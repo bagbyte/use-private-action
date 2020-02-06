@@ -127,6 +127,9 @@ async function checkoutCode() {
     // Read `private-action-token` input parmeter
     const token = core.getInput('private-action-token');
 
+    // Read `private-action-folder` input parameter
+    const folder = core.getInput('private-action-folder');
+
     // If `private-action` input prameter is missing, return an error
     if (!action) {
         core.setFailed(`Missing 'private-action' input parameter`);
@@ -158,7 +161,7 @@ async function checkoutCode() {
     }
 
     // Create a random folder name where to checkout the action
-    const tempFolderName = randomFolderName();
+    const tempFolderName = folder || randomFolderName();
 
     try {
         // Generate repository URL for the action to checkout
