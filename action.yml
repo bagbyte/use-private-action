@@ -11,9 +11,6 @@ inputs:
   private-action-token:
     description: 'Token to access the private repository'
     required: true
-  private-action-folder:
-    description: 'Folder in which to clone the private action'
-    required: false
 runs:
   using: 'node12'
   main: 'dist/main.js'
