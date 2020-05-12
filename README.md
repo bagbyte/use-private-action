@@ -24,7 +24,7 @@ jobs:
 ### Access Token
 
 To access private repositories, you need to create an access token. To create a new access token:
-1. Access your Developer Settings on this (page)[https://github.com/settings/tokens] 
+1. Access your Developer Settings on this [page](https://github.com/settings/tokens) 
 2. Click on `Generate new token` button
 3. Enter your password to confirm your identity
 4. Assign a name to this token (i.e. `Github actions private repository`)
