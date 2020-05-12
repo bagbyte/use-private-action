@@ -1,5 +1,5 @@
 name: 'bagbyte/use-private-action'
-description: 'This action allow to use custom actions in private GitHub repository.'
+description: 'This action allows the use of custom actions in private GitHub repositories.'
 author: 'bagbyte'
 branding: 
   icon: 'external-link'
